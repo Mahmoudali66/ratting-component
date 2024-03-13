@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Hanken Grotesk";
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+}
+.col{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.first{
+    background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));  
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+}
+.lav{
+    color: hsl(241, 100%, 89%);
+}
+.circle{
+    padding: 1%;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+}
+.wh{
+    color: white;
+}
+h1{
+    font-size: 3vw;
+    margin-bottom: 0px;
+}
+.second{
+    padding: 2%;
+}
+.assets{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    background-color: hsl(221, 100%, 96%);
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+}
+.number{
+    color: black;
+}
+.margin{
+    margin-left: 2%;
+}
+.reaction{
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+}
+button{
+    padding: 4%;
+    border-radius: 30px;
+    margin-top: 5%;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 1.5vw;
+    border: none;
+}
+button:hover{
+    background-color: hsl(241, 81%, 54%);
+}
+
+@media screen and (min-width: 480px){
+    .container{
+        flex-direction: row;
+        width: 50%;
+        height: 50%;
+        align-self: center;
+    }
+    .left{
+        width: 50%;
+        border-radius: 20px;
+    }
+    .right{
+        width: 50%;
+    }
+    .circle1{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        flex-direction: column;
+}
+    .top{
+        height: 45%;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .circle2{
+        width: 35%;
+}
+    .text1{
+        margin-top: 1%;
+}
+    }
